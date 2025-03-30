@@ -10,7 +10,7 @@ Par conséquent, c'est une classe qui ne sera jamais instanciée, et c'est uniqu
 On pourrait par ailleurs même aller plus loin et envisager d'en faire une classe scellée (sealed), qui connaîtrait ses classes filles (elle ne permet qu'aux classes qui lui sont spécifiées de l'étendre). Cela donnerait plus de contrôle sur les Canards qui peuvent être créés. <br>  
 
 *Quels comportements communs pourraient être définis dans une interface ?* <br>
-L'attaque spéciale.<br>  
+L'attaque spéciale pourrait être définis dans une interface.<br>  
 
 *Comment représenter un changement de statut (par exemple, brûlé ou paralysé) dans la modélisation ?* <br>
 Ici, nous avons choisi de représenter un statut via une énumération. 
