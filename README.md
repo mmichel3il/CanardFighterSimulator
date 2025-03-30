@@ -9,4 +9,6 @@ Canard Fighter Simulator est un jeu de combat mettant en scène des “Canards L
 *Comment représenter un changement de statut (par exemple, brûlé ou paralysé) dans la modélisation ?* <br>
 *Quels seraient les avantages d’utiliser une classe ou une interface supplémentaire pour gérer les capacités spéciales ?* <br>
 *Quels défis sont associés à l’extensibilité de votre modèle pour ajouter de nouveaux types de canards ou de nouvelles capacités ?* <br>
-
+## Diagramme UML des classes 
+## Description des choix techniques 
+## Réalisations bonus 
