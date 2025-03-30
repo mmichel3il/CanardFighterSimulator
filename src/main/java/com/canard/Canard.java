@@ -65,7 +65,14 @@ public abstract class Canard {
 
     void attaquer(Canard autreCanard) {
         energie -= COUT_ENERGIE_ATTAQUE;
-        autreCanard.subirDegats((int) (puissance * TypeCanard.getMultiplicateur(typeCanard, autreCanard.typeCanard)) + bonusAttaque());
+
+        int degats = (int) (puissance * TypeCanard.getMultiplicateur(typeCanard, autreCanard.typeCanard)) + bonusAttaque();
+
+        // 10% de chance de critique
+        if (Math.random() >= 0.9) {
+            degats *= 2;
+        }
+        autreCanard.subirDegats(degats);
     }
 
     protected int bonusAttaque() {
