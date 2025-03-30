@@ -5,22 +5,20 @@ Ce projet a été réalisé par Morgane MICHEL et Jodie MONTERDE dans le cadre d
 Canard Fighter Simulator est un jeu de combat mettant en scène des “Canards Légendaires” disposant de types, forces, faiblesses, attaques et capacités spéciales.
 ## Questionnements sur la modélisation
 *Quelles classes pourraient être abstraites ?* <br>
-La classe Canard est abstraite : on ne souhaite pas directement créer un Canard sans que celui-ci n'est un type définit.
-Par conséquent, c'est une classe qui ne sera jamais instanciée, et c'est uniquement via ses classes filles que nous allons pouvoir créer des Canards.
-On pourrait par ailleurs même aller plus loin et envisager d'en faire une classe scellée (sealed), qui connaîtrait ses classes filles 
-(elle ne permet qu'aux classes qui lui sont spécifiées de l'étendre). Cela donnerait plus de contrôle sur les Canards qui peuvent être créés. <br>
+La classe Canard est abstraite : on ne souhaite pas directement créer un Canard sans que celui-ci n'est un type définit. <br>
+Par conséquent, c'est une classe qui ne sera jamais instanciée, et c'est uniquement via ses classes filles que nous allons pouvoir créer des Canards. <br>
+On pourrait par ailleurs même aller plus loin et envisager d'en faire une classe scellée (sealed), qui connaîtrait ses classes filles (elle ne permet qu'aux classes qui lui sont spécifiées de l'étendre). Cela donnerait plus de contrôle sur les Canards qui peuvent être créés. <br>  
+
 *Quels comportements communs pourraient être définis dans une interface ?* <br>
-L'attaque spéciale.
-<br>
+L'attaque spéciale.<br>  
+
 *Comment représenter un changement de statut (par exemple, brûlé ou paralysé) dans la modélisation ?* <br>
 Ici, nous avons choisi de représenter un statut via une énumération. 
-Un canard a ainsi forcément un statut : normal, gelé, éventuellement paralysé ou brûlé. 
-De la sorte, on s'assure de limiter le statut d'un Canard à une liste définie et maîtrisée.
-Pour le changer/y accéder, il suffit donc qu'un Canard ait un attribut 'statut' qui contient la valeur de l'énumération qui contient son état actuel.
-
+Un canard a ainsi forcément un statut : normal, gelé, éventuellement paralysé ou brûlé. De la sorte, on s'assure de limiter le statut d'un Canard à une liste définie et maîtrisée. <br>
+Pour le changer/y accéder, il suffit donc qu'un Canard ait un attribut 'statut' qui contient la valeur de l'énumération qui contient son état actuel. <br>
 À noter : un Canard n'a qu'un seul état en même temps. Plus qu'une limitation, cependant, on peut considérer qu'il s'agit d'un choix
-d'implémentation. 
-<br>
+d'implémentation. <br>  
+
 *Quels seraient les avantages d’utiliser une classe ou une interface supplémentaire pour gérer les capacités spéciales ?* <br>
 - s'assurer que tous les Canards implémentent les méthodes qu'ils sont sensés implémenter
 - mieux organiser le code 
