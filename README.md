@@ -1,6 +1,6 @@
 # Canard Fighter Simulator
 ## Acteurs 
-Ce projet a été réalisé par Morgane MICHEL et Jodie MONTERDE dans le cadre de la conception orientée objet.
+Ce projet a été réalisé par Morgane MICHEL et Jodie MONTERDE dans le cadre de la conception orientée objet. Aucune IA n'a été utilisé pour cette réalisation.
 ## Description  
 Canard Fighter Simulator est un jeu de combat mettant en scène des “Canards Légendaires” disposant de types, forces, faiblesses, attaques et capacités spéciales.
 ## Questionnements sur la modélisation
