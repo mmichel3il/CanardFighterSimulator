@@ -33,7 +33,7 @@ Continuer à respecter les principes SOLID, notamment :
 - substitution de Liskov : Une classe dérivée doit pouvoir être utilisée à la place de sa classe mère sans modifier le comportement attendu. Si un CanardRobot hérite d’une classe Canard et que Canard a une méthode pondreOeuf(), le CanardRobot devra implémenter cette méthode alors qu’il ne pond pas d'œufs. Cela pourrait entraîner des comportements incohérents.
 - Ségregation des interfaces : Les classes ne doivent pas être forcées à implémenter des méthodes dont elles n’ont pas besoin. Une interface Canard contenant voler(), cancaner(), et nager() obligerait un CanardEnPlastique à implémenter voler(), même s’il ne vole pas.
 ## Diagramme UML des classes 
-cf. fichier 'UML.png'
+![Diagramme UML des classes](UML.png)
 ## Description des choix techniques 
 * Classe Canard Abstraite : comme expliqué plus haut.
 * Enumérations : TypeCanard et Statut : comme expliqué plus haut.
